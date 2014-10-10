@@ -16,7 +16,7 @@
 #'   www directory). For example, to use the theme located at
 #'   \code{www/bootstrap.css} you would use \code{theme = "bootstrap.css"}.
 #'
-#' @return A UI defintion that can be passed to the \link{shinyUI} function.
+#' @return A UI defintion that can be passed to the \link[shiny]{shinyUI} function.
 #'
 #' @details To create a fixed page use the \code{fixedPage} function and include
 #'   instances of \code{fixedRow} and \code{\link{column}} within it. Note that

@@ -86,7 +86,7 @@ selectOptions <- function(choices, selected = NULL) {
 #' @param ... Arguments passed to \code{selectInput()}.
 #' @param options A list of options. See the documentation of \pkg{selectize.js}
 #'   for possible options (character option values inside \code{\link{I}()} will
-#'   be treated as literal JavaScript code; see \code{\link{renderDataTable}()}
+#'   be treated as literal JavaScript code; see \code{\link[shiny]{renderDataTable}()}
 #'   for details).
 #' @param width The width of the input, e.g. \code{'400px'}, or \code{'100\%'};
 #'   see \code{\link{validateCssUnit}}.

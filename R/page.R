@@ -16,7 +16,7 @@
 #' @param theme Alternative Bootstrap stylesheet (normally a css file within the
 #'   www directory, e.g. \code{www/bootstrap.css})
 #'
-#' @return A UI defintion that can be passed to the \link{shinyUI} function.
+#' @return A UI defintion that can be passed to the \link[shiny]{shinyUI} function.
 #'
 #' @note The \code{basicPage} function is deprecated, you should use the
 #'   \code{\link{fluidPage}} function instead.
@@ -83,7 +83,7 @@ basicPage <- function(...) {
 #' @param sidebarPanel The \link{sidebarPanel} containing input controls
 #' @param mainPanel The \link{mainPanel} containing outputs
 
-#' @return A UI defintion that can be passed to the \link{shinyUI} function
+#' @return A UI defintion that can be passed to the \link[shiny]{shinyUI} function
 #'
 #' @note This function is deprecated. You should use \code{\link{fluidPage}}
 #' along with \code{\link{sidebarLayout}} to implement a page with a sidebar.
@@ -161,7 +161,7 @@ pageWithSidebar <- function(headerPanel,
 #'   Useful if \code{title} is not a string.
 #' @param icon Optional icon to appear on a \code{navbarMenu} tab.
 #'
-#' @return A UI defintion that can be passed to the \link{shinyUI} function.
+#' @return A UI defintion that can be passed to the \link[shiny]{shinyUI} function.
 #'
 #' @details The \code{navbarMenu} function can be used to create an embedded
 #'   menu within the navbar that in turns includes additional tabPanels (see

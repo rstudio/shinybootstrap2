@@ -16,7 +16,7 @@
 #'   www directory). For example, to use the theme located at
 #'   \code{www/bootstrap.css} you would use \code{theme = "bootstrap.css"}.
 #'
-#' @return A UI defintion that can be passed to the \link{shinyUI} function.
+#' @return A UI defintion that can be passed to the \link[shiny]{shinyUI} function.
 #'
 #' @details To create a fluid page use the \code{fluidPage} function and include
 #'   instances of \code{fluidRow} and \code{\link{column}} within it. As an

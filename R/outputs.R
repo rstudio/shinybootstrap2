@@ -8,7 +8,7 @@
 #'   for the output
 #' @return A text output element that can be included in a panel
 #' @details Text is HTML-escaped prior to rendering. This element is often used
-#'   to display \link{renderText} output variables.
+#'   to display \link[shiny]{renderText} output variables.
 #' @examples
 #' h3(textOutput("caption"))
 #' @export
@@ -23,7 +23,7 @@ textOutput <- function(outputId, container = if (inline) span else div, inline =
 #' @param outputId output variable to read the value from
 #' @return A verbatim text output element that can be included in a panel
 #' @details Text is HTML-escaped prior to rendering. This element is often used
-#' with the \link{renderPrint} function to preserve fixed-width formatting
+#' with the \link[shiny]{renderPrint} function to preserve fixed-width formatting
 #' of printed objects.
 #' @examples
 #' mainPanel(
@@ -40,7 +40,7 @@ verbatimTextOutput <- function(outputId) {
 
 #' Create a image output element
 #'
-#' Render a \link{renderImage} within an application page.
+#' Render a \link[shiny]{renderImage} within an application page.
 #' @param outputId output variable to read the image from
 #' @param width Image width. Must be a valid CSS unit (like \code{"100\%"},
 #'   \code{"400px"}, \code{"auto"}) or a number, which will be coerced to a
@@ -63,7 +63,7 @@ imageOutput <- function(outputId, width = "100%", height="400px", inline=FALSE) 
 
 #' Create an plot output element
 #'
-#' Render a \link{renderPlot} within an application page.
+#' Render a \link[shiny]{renderPlot} within an application page.
 #' @param outputId output variable to read the plot from
 #' @param width,height Plot width/height. Must be a valid CSS unit (like
 #'   \code{"100\%"}, \code{"400px"}, \code{"auto"}) or a number, which will be
@@ -124,7 +124,7 @@ plotOutput <- function(outputId, width = "100%", height="400px",
 
 #' Create a table output element
 #'
-#' Render a \link{renderTable} within an application page.
+#' Render a \link[shiny]{renderTable} within an application page.
 #' @param outputId output variable to read the table from
 #' @return A table output element that can be included in a panel
 #' @examples

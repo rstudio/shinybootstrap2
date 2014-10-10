@@ -2,7 +2,7 @@
 #'
 #' Use these functions to create a download button or link; when clicked, it
 #' will initiate a browser download. The filename and contents are specified by
-#' the corresponding \code{\link{downloadHandler}} defined in the server
+#' the corresponding \code{\link[shiny]{downloadHandler}} defined in the server
 #' function.
 #'
 #' @param outputId The name of the output slot that the \code{downloadHandler}
