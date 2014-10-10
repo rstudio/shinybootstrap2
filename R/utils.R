@@ -42,3 +42,19 @@ toJSON <- function(x, ..., digits = getOption("shiny.json.digits", 16)) {
   jsonlite::toJSON(x, dataframe = "columns", null = "null", na = "null",
                    auto_unbox = TRUE, digits = digits, ...)
 }
+
+# Given a vector or list, drop all the NULL items in it
+dropNulls <- function(x) {
+  x[!vapply(x, is.null, FUN.VALUE=logical(1))]
+}
+
+# turn column-based data to row-based data (mainly for JSON), e.g. data.frame(x
+# = 1:10, y = 10:1) ==> list(list(x = 1, y = 10), list(x = 2, y = 9), ...)
+columnToRowData <- function(data) {
+  do.call(
+    mapply, c(
+      list(FUN = function(...) list(...), SIMPLIFY = FALSE, USE.NAMES = FALSE),
+      as.list(data)
+    )
+  )
+}
