@@ -82,7 +82,7 @@ titlePanel <- function(title, windowTitle=title) {
 #'
 #' @examples
 #' # Define UI
-#' shinyUI(fluidPage(
+#' fluidPage(
 #'
 #'   # Application title
 #'   titlePanel("Hello Shiny!"),
@@ -103,7 +103,7 @@ titlePanel <- function(title, windowTitle=title) {
 #'       plotOutput("distPlot")
 #'     )
 #'   )
-#' ))
+#' )
 #'
 #' @export
 sidebarLayout <- function(sidebarPanel,
@@ -141,13 +141,15 @@ sidebarLayout <- function(sidebarPanel,
 #' @seealso \code{\link{fluidPage}}, \code{\link{flowLayout}}
 #'
 #' @examples
-#' shinyUI(fluidPage(
+#' \donttest{
+#' fluidPage(
 #'   verticalLayout(
 #'     a(href="http://example.com/link1", "Link One"),
 #'     a(href="http://example.com/link2", "Link Two"),
 #'     a(href="http://example.com/link3", "Link Three")
 #'   )
-#' ))
+#' )
+#' }
 #' @export
 verticalLayout <- function(..., fluid = TRUE) {
   lapply(list(...), function(row) {

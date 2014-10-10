@@ -89,8 +89,7 @@ basicPage <- function(...) {
 #' along with \code{\link{sidebarLayout}} to implement a page with a sidebar.
 #'
 #' @examples
-#' # Define UI
-#' shinyUI(pageWithSidebar(
+#' pageWithSidebar(
 #'
 #'   # Application title
 #'   headerPanel("Hello Shiny!"),
@@ -108,7 +107,7 @@ basicPage <- function(...) {
 #'   mainPanel(
 #'     plotOutput("distPlot")
 #'   )
-#' ))
+#' )
 #'
 #' @export
 pageWithSidebar <- function(headerPanel,
@@ -170,19 +169,19 @@ pageWithSidebar <- function(headerPanel,
 #' @seealso \code{\link{tabPanel}}, \code{\link{tabsetPanel}}
 #'
 #' @examples
-#' shinyUI(navbarPage("App Title",
+#' navbarPage("App Title",
 #'   tabPanel("Plot"),
 #'   tabPanel("Summary"),
 #'   tabPanel("Table")
-#' ))
+#' )
 #'
-#' shinyUI(navbarPage("App Title",
+#' navbarPage("App Title",
 #'   tabPanel("Plot"),
 #'   navbarMenu("More",
 #'     tabPanel("Summary"),
 #'     tabPanel("Table")
 #'   )
-#' ))
+#' )
 #' @export
 navbarPage <- function(title,
                        ...,

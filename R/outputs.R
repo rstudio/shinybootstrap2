@@ -10,7 +10,9 @@
 #' @details Text is HTML-escaped prior to rendering. This element is often used
 #'   to display \link[shiny]{renderText} output variables.
 #' @examples
+#' \donttest{
 #' h3(textOutput("caption"))
+#' }
 #' @export
 textOutput <- function(outputId, container = if (inline) span else div, inline = FALSE) {
   container(id = outputId, class = "shiny-text-output")
@@ -26,6 +28,7 @@ textOutput <- function(outputId, container = if (inline) span else div, inline =
 #' with the \link[shiny]{renderPrint} function to preserve fixed-width formatting
 #' of printed objects.
 #' @examples
+#' \donttest{
 #' mainPanel(
 #'   h4("Summary"),
 #'   verbatimTextOutput("summary"),
@@ -33,6 +36,7 @@ textOutput <- function(outputId, container = if (inline) span else div, inline =
 #'   h4("Observations"),
 #'   tableOutput("view")
 #' )
+#' }
 #' @export
 verbatimTextOutput <- function(outputId) {
   textOutput(outputId, container = pre)

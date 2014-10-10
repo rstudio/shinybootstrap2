@@ -116,7 +116,7 @@ tabsetPanel <- function(...,
 #' including "------" (any number of dashes works).
 #'
 #' @examples
-#' shinyUI(fluidPage(
+#' fluidPage(
 #'
 #'   titlePanel("Application Title"),
 #'
@@ -127,7 +127,7 @@ tabsetPanel <- function(...,
 #'     "-----",
 #'     tabPanel("Third")
 #'   )
-#' ))
+#' )
 #' @export
 navlistPanel <- function(...,
                          id = NULL,

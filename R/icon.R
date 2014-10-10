@@ -24,11 +24,11 @@
 #' # add an icon to a submit button
 #' submitButton("Update View", icon = icon("refresh"))
 #'
-#' shinyUI(navbarPage("App Title",
+#' navbarPage("App Title",
 #'   tabPanel("Plot", icon = icon("bar-chart-o")),
 #'   tabPanel("Summary", icon = icon("list-alt")),
 #'   tabPanel("Table", icon = icon("table"))
-#' ))
+#' )
 #'
 #' @export
 icon <- function(name, class = NULL, lib = "font-awesome") {

@@ -32,7 +32,7 @@
 #' @seealso \code{\link{column}}
 #'
 #' @examples
-#' shinyUI(fixedPage(
+#' fixedPage(
 #'   title = "Hello, Shiny!",
 #'   fixedRow(
 #'     column(width = 4,
@@ -42,7 +42,7 @@
 #'       "3 offset 2"
 #'     )
 #'   )
-#' ))
+#' )
 #'
 #' @rdname fixedPage
 #' @export

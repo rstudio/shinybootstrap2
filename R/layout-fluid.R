@@ -31,7 +31,7 @@
 #' @seealso \code{\link{column}}, \code{\link{sidebarLayout}}
 #'
 #' @examples
-#' shinyUI(fluidPage(
+#' fluidPage(
 #'
 #'   # Application title
 #'   titlePanel("Hello Shiny!"),
@@ -52,9 +52,9 @@
 #'       plotOutput("distPlot")
 #'     )
 #'   )
-#' ))
+#' )
 #'
-#' shinyUI(fluidPage(
+#' fluidPage(
 #'   title = "Hello Shiny!",
 #'   fluidRow(
 #'     column(width = 4,
@@ -64,7 +64,7 @@
 #'       "3 offset 2"
 #'     )
 #'   )
-#' ))
+#' )
 #'
 #' @rdname fluidPage
 #' @export
