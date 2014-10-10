@@ -3,7 +3,11 @@ Title: Bootstrap 2 web components for use with Shiny
 Version: 0.1
 Author: RStudio, Inc.
 Maintainer: Winston Chang <winston@rstudio.com>
-Description: Provides Bootstrap 2 web components for use with Shiny.
+Description: Provides Bootstrap 2 web components for use with the Shiny
+    package. With Shiny version 0.10.2 and below, these Bootstrap 2 components
+    were included as part of the package. Later versions of Shiny include
+    Bootstrap 3, so the Bootstrap 2 components have been moved into this
+    package for those uses who rely on features specific to Bootstrap 2.
 Depends:
     R (>= 3.0.0)
 License: GPL-3
