@@ -30,3 +30,12 @@ bs2exports <- function() {
 
 # A cache for the list of exported objects from this package.
 cache <- new.env()
+
+
+.onAttach <- function(libname, pkgname) {
+  packageStartupMessage(
+    "You probably do not want to attach this package (with library() or require()).",
+    " Instead, you should use shinyBootstrap2::withBootstrap2().",
+    " You can hide this message with suppressPackageStartupMessages()."
+  )
+}
