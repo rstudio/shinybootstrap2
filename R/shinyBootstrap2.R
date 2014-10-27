@@ -13,9 +13,20 @@ withBootstrap2 <- function(expr, env = parent.frame()) {
 
   # Copy everything from the shinyBootstrap2 environment to a new environment
   # which is a child of the calling environment.
-  bs2env <- list2env(as.list(bs2env), parent = env)
+  bs2env <- list2env(bs2exports(), parent = env)
 
   eval(expr, bs2env)
 }
 
-bs2env <- environment()
+
+# Return a list of all exported objects from this package.
+bs2exports <- function() {
+  if (is.null(cache$exports)) {
+    cache$exports <- mget(getNamespaceExports("shinyBootstrap2"), asNamespace("shinyBootstrap2"))
+  }
+
+  cache$exports
+}
+
+# A cache for the list of exported objects from this package.
+cache <- new.env()
