@@ -8,14 +8,14 @@ NULL
 
 
 #' @export
-withBootstrap2 <- function(expr, env = parent.frame()) {
-  expr <- substitute(expr)
+withBootstrap2 <- function(x, env = parent.frame(), quoted = FALSE) {
+  if (!quoted) x <- substitute(x)
 
   # Copy everything from the shinyBootstrap2 environment to a new environment
   # which is a child of the calling environment.
   bs2env <- list2env(bs2exports(), parent = env)
 
-  eval(expr, bs2env)
+  eval(x, bs2env)
 }
 
 
