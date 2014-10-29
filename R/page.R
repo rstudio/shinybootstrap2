@@ -267,12 +267,3 @@ navbarPage <- function(title,
     contentDiv
   )
 }
-
-#' @rdname navbarPage
-#' @export
-navbarMenu <- function(title, ..., icon = NULL) {
-  structure(list(title = title,
-                 tabs = list(...),
-                 iconClass = iconClass(icon)),
-            class = "shiny.navbarmenu")
-}

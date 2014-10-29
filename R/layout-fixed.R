@@ -52,9 +52,3 @@ fixedPage <- function(..., title = NULL, responsive = TRUE, theme = NULL) {
                 responsive = responsive,
                 theme = theme)
 }
-
-#' @rdname fixedPage
-#' @export
-fixedRow <- function(...) {
-  div(class = "row", ...)
-}
