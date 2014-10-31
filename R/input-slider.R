@@ -30,7 +30,7 @@
 #'   created using \code{animationOptions}.
 #' @inheritParams selectizeInput
 #' @family input elements
-#' @seealso \code{\link{updateSliderInput}}
+#' @seealso \code{\link[shiny]{updateSliderInput}}
 #'
 #' @details
 #'

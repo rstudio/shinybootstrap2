@@ -1,7 +1,7 @@
 #' Create a column within a UI definition
 #'
 #' Create a column for use within a  \code{\link{fluidRow}} or
-#' \code{\link{fixedRow}}
+#' \code{\link[shiny]{fixedRow}}
 #'
 #' @param width The grid width of the column (must be between 1 and 12)
 #' @param ... Elements to include within the column
@@ -9,12 +9,14 @@
 #'   previous column.
 #'
 #' @return A column that can be included within a
-#'   \code{\link{fluidRow}} or \code{\link{fixedRow}}.
+#'   \code{\link{fluidRow}} or \code{\link[shiny]{fixedRow}}.
 #'
 #'
-#' @seealso \code{\link{fluidRow}}, \code{\link{fixedRow}}.
+#' @seealso \code{\link{fluidRow}}, \code{\link[shiny]{fixedRow}}.
 #'
 #' @examples
+#' library(shiny)
+#'
 #' fluidRow(
 #'   column(4,
 #'     sliderInput("obs", "Number of observations:",
@@ -60,6 +62,8 @@ column <- function(width, ..., offset = 0) {
 #'   layout.
 #'
 #' @examples
+#' library(shiny)
+#'
 #' # Define UI
 #' fluidPage(
 #'
@@ -117,10 +121,11 @@ sidebarLayout <- function(sidebarPanel,
 #' @param fluid \code{TRUE} to use fluid layout; \code{FALSE} to use fixed
 #'   layout.
 #'
-#' @seealso \code{\link{fluidPage}}, \code{\link{flowLayout}}
+#' @seealso \code{\link{fluidPage}}, \code{\link[shiny]{flowLayout}}
 #'
 #' @examples
-#' \donttest{
+#' library(shiny)
+#'
 #' fluidPage(
 #'   verticalLayout(
 #'     a(href="http://example.com/link1", "Link One"),
@@ -128,7 +133,6 @@ sidebarLayout <- function(sidebarPanel,
 #'     a(href="http://example.com/link3", "Link Three")
 #'   )
 #' )
-#' }
 #' @export
 verticalLayout <- function(..., fluid = TRUE) {
   lapply(list(...), function(row) {

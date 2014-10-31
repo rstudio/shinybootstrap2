@@ -11,7 +11,7 @@
 #' @return A numeric input control that can be added to a UI definition.
 #'
 #' @family input elements
-#' @seealso \code{\link{updateNumericInput}}
+#' @seealso \code{\link[shiny]{updateNumericInput}}
 #'
 #' @examples
 #' numericInput("obs", "Observations:", 10,

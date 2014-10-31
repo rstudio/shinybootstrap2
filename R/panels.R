@@ -81,13 +81,12 @@ sidebarPanel <- function(..., width = 4) {
 #' @return A main panel that can be passed to \code{\link{sidebarLayout}}.
 #'
 #' @examples
-#' \donttest{
+#' library(shiny)
 #' # Show the caption and plot of the requested variable against mpg
 #' mainPanel(
 #'    h3(textOutput("caption")),
 #'    plotOutput("mpgPlot")
 #' )
-#' }
 #' @export
 mainPanel <- function(..., width = 8) {
   div(class=paste0("span", width),

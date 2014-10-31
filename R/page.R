@@ -90,6 +90,8 @@ basicPage <- function(...) {
 #' along with \code{\link{sidebarLayout}} to implement a page with a sidebar.
 #'
 #' @examples
+#' library(shiny)
+#'
 #' pageWithSidebar(
 #'
 #'   # Application title
@@ -133,14 +135,14 @@ pageWithSidebar <- function(headerPanel,
 #' Create a page with a top level navigation bar
 #'
 #' Create a page that contains a top level navigation bar that can be used to
-#' toggle a set of \code{\link{tabPanel}} elements.
+#' toggle a set of \code{\link[shiny]{tabPanel}} elements.
 #'
 #' @param title The title to display in the navbar
-#' @param ... \code{\link{tabPanel}} elements to include in the page
+#' @param ... \code{\link[shiny]{tabPanel}} elements to include in the page
 #' @param id If provided, you can use \code{input$}\emph{\code{id}} in your
 #'   server logic to determine which of the current tabs is active. The value
 #'   will correspond to the \code{value} argument that is passed to
-#'   \code{\link{tabPanel}}.
+#'   \code{\link[shiny]{tabPanel}}.
 #' @param header Tag of list of tags to display as a common header above all
 #'   tabPanels.
 #' @param footer Tag or list of tags to display as a common footer below all
@@ -159,7 +161,6 @@ pageWithSidebar <- function(headerPanel,
 #'   \code{www/bootstrap.css} you would use \code{theme = "bootstrap.css"}.
 #' @param windowTitle The title that should be displayed by the browser window.
 #'   Useful if \code{title} is not a string.
-#' @param icon Optional icon to appear on a \code{navbarMenu} tab.
 #'
 #' @return A UI defintion that can be passed to the \link[shiny]{shinyUI} function.
 #'
@@ -167,9 +168,10 @@ pageWithSidebar <- function(headerPanel,
 #'   menu within the navbar that in turns includes additional tabPanels (see
 #'   example below).
 #'
-#' @seealso \code{\link{tabPanel}}, \code{\link{tabsetPanel}}
+#' @seealso \code{\link[shiny]{tabPanel}}, \code{\link[shiny]{tabsetPanel}}
 #'
 #' @examples
+#' \dontrun{
 #' navbarPage("App Title",
 #'   tabPanel("Plot"),
 #'   tabPanel("Summary"),
@@ -183,6 +185,7 @@ pageWithSidebar <- function(headerPanel,
 #'     tabPanel("Table")
 #'   )
 #' )
+#' }
 #' @export
 navbarPage <- function(title,
                        ...,

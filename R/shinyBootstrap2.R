@@ -32,7 +32,7 @@ NULL
 #'   default) \code{x} will be treated as an unquoted expression. If
 #'   \code{TRUE}, the code should be the output of a \code{\link{quote}()}.
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' library(shiny)
 #'
 #' ## Single-file app using Bootstrap 2 ===========================

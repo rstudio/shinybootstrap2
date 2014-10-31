@@ -31,6 +31,8 @@
 #' @seealso \code{\link{column}}, \code{\link{sidebarLayout}}
 #'
 #' @examples
+#' library(shiny)
+#'
 #' fluidPage(
 #'
 #'   # Application title

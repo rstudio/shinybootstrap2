@@ -20,7 +20,7 @@
 #' @return A select list control that can be added to a UI definition.
 #'
 #' @family input elements
-#' @seealso \code{\link{updateSelectInput}}
+#' @seealso \code{\link[shiny]{updateSelectInput}}
 #'
 #' @examples
 #' selectInput("variable", "Variable:",

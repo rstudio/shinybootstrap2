@@ -5,12 +5,13 @@
 #' rather they wait until the user explicitly clicks the submit button.
 #'
 #' @param text Button caption
-#' @param icon Optional \code{\link{icon}} to appear on the button
+#' @param icon Optional \code{\link[shiny]{icon}} to appear on the button
 #' @return A submit button that can be added to a UI definition.
 #'
 #' @family input elements
 #'
 #' @examples
+#' library(shiny)
 #' submitButton("Update View")
 #' submitButton("Update View", icon("refresh"))
 #' @export

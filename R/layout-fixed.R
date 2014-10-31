@@ -32,6 +32,8 @@
 #' @seealso \code{\link{column}}
 #'
 #' @examples
+#' library(shiny)
+#'
 #' fixedPage(
 #'   title = "Hello, Shiny!",
 #'   fixedRow(

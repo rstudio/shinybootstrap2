@@ -3,11 +3,11 @@
 #' Create a navigation list panel that provides a list of links on the left
 #' which navigate to a set of tabPanels displayed to the right.
 #'
-#' @param ... \code{\link{tabPanel}} elements to include in the navlist
+#' @param ... \code{\link[shiny]{tabPanel}} elements to include in the navlist
 #' @param id If provided, you can use \code{input$}\emph{\code{id}} in your
 #'   server logic to determine which of the current navlist items is active. The
 #'   value will correspond to the \code{value} argument that is passed to
-#'   \code{\link{tabPanel}}.
+#'   \code{\link[shiny]{tabPanel}}.
 #' @param selected The \code{value} (or, if none was supplied, the \code{title})
 #'   of the navigation item that should be selected by default. If \code{NULL},
 #'   the first navigation will be selected.
@@ -23,6 +23,8 @@
 #' including "------" (any number of dashes works).
 #'
 #' @examples
+#' library(shiny)
+#'
 #' fluidPage(
 #'
 #'   titlePanel("Application Title"),
