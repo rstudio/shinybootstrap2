@@ -19,6 +19,27 @@ headerPanel <- function(title, windowTitle=title) {
   )
 }
 
+#' Create a panel containing an application title.
+#'
+#' @param title An application title to display
+#' @param windowTitle The title that should be displayed by the browser window.
+#'
+#' @details Calling this function has the side effect of including a
+#'   \code{title} tag within the head. You can also specify a page title
+#'   explicitly using the `title` parameter of the top-level page function.
+#'
+#'
+#' @examples
+#' titlePanel("Hello Shiny!")
+#'
+#' @export
+titlePanel <- function(title, windowTitle=title) {
+  tagList(
+    tags$head(tags$title(windowTitle)),
+    h2(style = "padding: 10px 0px;", title)
+  )
+}
+
 #' Create a sidebar panel
 #'
 #' Create a sidebar panel containing input controls that can in turn be passed
