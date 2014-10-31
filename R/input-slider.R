@@ -50,7 +50,7 @@ sliderInput <- function(inputId, label, min, max, value, step = NULL,
                         ticks=TRUE, animate=FALSE, width=NULL) {
 
   if (identical(animate, TRUE))
-    animate <- shiny:::animationOptions()
+    animate <- shiny::animationOptions()
 
   if (!is.null(animate) && !identical(animate, FALSE)) {
     if (is.null(animate$playButton))

@@ -119,7 +119,7 @@ buildTabset <- function(tabs,
         # for font-awesome we specify fixed-width
         if (grepl("fa-", iconClass, fixed = TRUE))
           iconClass <- paste(iconClass, "fa-fw")
-        aTag <- tagAppendChild(aTag, icon(name = NULL, class = iconClass))
+        aTag <- tagAppendChild(aTag, shiny::icon(name = NULL, class = iconClass))
       }
       aTag
     }
