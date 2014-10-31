@@ -29,16 +29,13 @@ numericInput("obs", "Observations:", 10,
              min = 1, max = 100)
 }
 \seealso{
-\code{\link{updateNumericInput}}
+\code{\link[shiny]{updateNumericInput}}
 
-Other input.elements: \code{\link{actionButton}},
-  \code{\link{actionLink}}; \code{\link{animationOptions}},
-  \code{\link{sliderInput}};
-  \code{\link{checkboxGroupInput}};
+Other input.elements: \code{\link{checkboxGroupInput}};
   \code{\link{checkboxInput}}; \code{\link{dateInput}};
-  \code{\link{dateRangeInput}}; \code{\link{fileInput}};
-  \code{\link{radioButtons}}; \code{\link{selectInput}},
-  \code{\link{selectizeInput}}; \code{\link{submitButton}};
+  \code{\link{dateRangeInput}}; \code{\link{radioButtons}};
+  \code{\link{selectInput}}, \code{\link{selectizeInput}};
+  \code{\link{sliderInput}}; \code{\link{submitButton}};
   \code{\link{textInput}}
 }
 

@@ -80,16 +80,13 @@ dateInput("date", "Date:",
           startview = "decade")
 }
 \seealso{
-\code{\link{dateRangeInput}}, \code{\link{updateDateInput}}
+\code{\link{dateRangeInput}}, \code{\link[shiny]{updateDateInput}}
 
-Other input.elements: \code{\link{actionButton}},
-  \code{\link{actionLink}}; \code{\link{animationOptions}},
-  \code{\link{sliderInput}};
-  \code{\link{checkboxGroupInput}};
+Other input.elements: \code{\link{checkboxGroupInput}};
   \code{\link{checkboxInput}};
-  \code{\link{dateRangeInput}}; \code{\link{fileInput}};
-  \code{\link{numericInput}}; \code{\link{radioButtons}};
-  \code{\link{selectInput}}, \code{\link{selectizeInput}};
+  \code{\link{dateRangeInput}}; \code{\link{numericInput}};
+  \code{\link{radioButtons}}; \code{\link{selectInput}},
+  \code{\link{selectizeInput}}; \code{\link{sliderInput}};
   \code{\link{submitButton}}; \code{\link{textInput}}
 }
 

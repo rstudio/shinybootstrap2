@@ -8,7 +8,7 @@ submitButton(text = "Apply Changes", icon = NULL)
 \arguments{
 \item{text}{Button caption}
 
-\item{icon}{Optional \code{\link{icon}} to appear on the button}
+\item{icon}{Optional \code{\link[shiny]{icon}} to appear on the button}
 }
 \value{
 A submit button that can be added to a UI definition.
@@ -19,18 +19,16 @@ button do not automatically update their outputs when inputs change,
 rather they wait until the user explicitly clicks the submit button.
 }
 \examples{
+library(shiny)
 submitButton("Update View")
 submitButton("Update View", icon("refresh"))
 }
 \seealso{
-Other input.elements: \code{\link{actionButton}},
-  \code{\link{actionLink}}; \code{\link{animationOptions}},
-  \code{\link{sliderInput}};
-  \code{\link{checkboxGroupInput}};
+Other input.elements: \code{\link{checkboxGroupInput}};
   \code{\link{checkboxInput}}; \code{\link{dateInput}};
-  \code{\link{dateRangeInput}}; \code{\link{fileInput}};
-  \code{\link{numericInput}}; \code{\link{radioButtons}};
-  \code{\link{selectInput}}, \code{\link{selectizeInput}};
+  \code{\link{dateRangeInput}}; \code{\link{numericInput}};
+  \code{\link{radioButtons}}; \code{\link{selectInput}},
+  \code{\link{selectizeInput}}; \code{\link{sliderInput}};
   \code{\link{textInput}}
 }
 

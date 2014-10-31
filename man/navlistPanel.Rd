@@ -7,12 +7,12 @@ navlistPanel(..., id = NULL, selected = NULL, well = TRUE, fluid = TRUE,
   widths = c(4, 8))
 }
 \arguments{
-\item{...}{\code{\link{tabPanel}} elements to include in the navlist}
+\item{...}{\code{\link[shiny]{tabPanel}} elements to include in the navlist}
 
 \item{id}{If provided, you can use \code{input$}\emph{\code{id}} in your
 server logic to determine which of the current navlist items is active. The
 value will correspond to the \code{value} argument that is passed to
-\code{\link{tabPanel}}.}
+\code{\link[shiny]{tabPanel}}.}
 
 \item{selected}{The \code{value} (or, if none was supplied, the \code{title})
 of the navigation item that should be selected by default. If \code{NULL},
@@ -37,6 +37,8 @@ including plain text elements in the list; you can include separators by
 including "------" (any number of dashes works).
 }
 \examples{
+library(shiny)
+
 fluidPage(
 
   titlePanel("Application Title"),

@@ -15,13 +15,15 @@ column(width, ..., offset = 0)
 }
 \value{
 A column that can be included within a
-  \code{\link{fluidRow}} or \code{\link{fixedRow}}.
+  \code{\link{fluidRow}} or \code{\link[shiny]{fixedRow}}.
 }
 \description{
 Create a column for use within a  \code{\link{fluidRow}} or
-\code{\link{fixedRow}}
+\code{\link[shiny]{fixedRow}}
 }
 \examples{
+library(shiny)
+
 fluidRow(
   column(4,
     sliderInput("obs", "Number of observations:",
@@ -42,6 +44,6 @@ fluidRow(
 )
 }
 \seealso{
-\code{\link{fluidRow}}, \code{\link{fixedRow}}.
+\code{\link{fluidRow}}, \code{\link[shiny]{fixedRow}}.
 }
 

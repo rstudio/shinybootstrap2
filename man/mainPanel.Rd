@@ -20,12 +20,11 @@ Create a main panel containing output elements that can in turn be passed to
 \code{\link{sidebarLayout}}.
 }
 \examples{
-\donttest{
+library(shiny)
 # Show the caption and plot of the requested variable against mpg
 mainPanel(
    h3(textOutput("caption")),
    plotOutput("mpgPlot")
 )
-}
 }
 

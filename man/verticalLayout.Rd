@@ -16,7 +16,8 @@ Create a container that includes one or more rows of content (each element
 passed to the container will appear on it's own line in the UI)
 }
 \examples{
-\donttest{
+library(shiny)
+
 fluidPage(
   verticalLayout(
     a(href="http://example.com/link1", "Link One"),
@@ -25,8 +26,7 @@ fluidPage(
   )
 )
 }
-}
 \seealso{
-\code{\link{fluidPage}}, \code{\link{flowLayout}}
+\code{\link{fluidPage}}, \code{\link[shiny]{flowLayout}}
 }
 

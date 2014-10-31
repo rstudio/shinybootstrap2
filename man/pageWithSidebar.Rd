@@ -24,6 +24,8 @@ This function is deprecated. You should use \code{\link{fluidPage}}
 along with \code{\link{sidebarLayout}} to implement a page with a sidebar.
 }
 \examples{
+library(shiny)
+
 pageWithSidebar(
 
   # Application title

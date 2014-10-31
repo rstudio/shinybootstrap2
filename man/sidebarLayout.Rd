@@ -23,6 +23,8 @@ distinct background color and typically contains input controls. The main
 area occupies 2/3 of the horizontal width and typically contains outputs.
 }
 \examples{
+library(shiny)
+
 # Define UI
 fluidPage(
 

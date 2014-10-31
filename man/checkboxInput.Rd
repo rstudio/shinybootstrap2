@@ -22,16 +22,13 @@ Create a checkbox that can be used to specify logical values.
 checkboxInput("outliers", "Show outliers", FALSE)
 }
 \seealso{
-\code{\link{checkboxGroupInput}}, \code{\link{updateCheckboxInput}}
+\code{\link{checkboxGroupInput}}, \code{\link[shiny]{updateCheckboxInput}}
 
-Other input.elements: \code{\link{actionButton}},
-  \code{\link{actionLink}}; \code{\link{animationOptions}},
-  \code{\link{sliderInput}};
-  \code{\link{checkboxGroupInput}};
+Other input.elements: \code{\link{checkboxGroupInput}};
   \code{\link{dateInput}}; \code{\link{dateRangeInput}};
-  \code{\link{fileInput}}; \code{\link{numericInput}};
-  \code{\link{radioButtons}}; \code{\link{selectInput}},
-  \code{\link{selectizeInput}}; \code{\link{submitButton}};
+  \code{\link{numericInput}}; \code{\link{radioButtons}};
+  \code{\link{selectInput}}, \code{\link{selectizeInput}};
+  \code{\link{sliderInput}}; \code{\link{submitButton}};
   \code{\link{textInput}}
 }
 

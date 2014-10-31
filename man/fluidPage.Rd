@@ -45,6 +45,8 @@ See the
   pages.
 }
 \examples{
+library(shiny)
+
 fluidPage(
 
   # Application title

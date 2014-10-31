@@ -65,15 +65,12 @@ selectInput("variable", "Variable:",
               "Gears" = "gear"))
 }
 \seealso{
-\code{\link{updateSelectInput}}
+\code{\link[shiny]{updateSelectInput}}
 
-Other input.elements: \code{\link{actionButton}},
-  \code{\link{actionLink}}; \code{\link{animationOptions}},
-  \code{\link{sliderInput}};
-  \code{\link{checkboxGroupInput}};
+Other input.elements: \code{\link{checkboxGroupInput}};
   \code{\link{checkboxInput}}; \code{\link{dateInput}};
-  \code{\link{dateRangeInput}}; \code{\link{fileInput}};
-  \code{\link{numericInput}}; \code{\link{radioButtons}};
+  \code{\link{dateRangeInput}}; \code{\link{numericInput}};
+  \code{\link{radioButtons}}; \code{\link{sliderInput}};
   \code{\link{submitButton}}; \code{\link{textInput}}
 }
 

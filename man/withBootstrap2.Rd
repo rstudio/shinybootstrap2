@@ -34,7 +34,7 @@ shinyBootstrap2 masking functions from shiny, even outside of
 \code{withBootstrap2()}.
 }
 \examples{
-\donttest{
+\dontrun{
 library(shiny)
 
 ## Single-file app using Bootstrap 2 ===========================
