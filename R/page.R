@@ -41,8 +41,10 @@ bootstrapPage <- function(..., title = NULL, responsive = TRUE, theme = NULL) {
     list(
       htmlDependency("bootstrap", "2.3.2", bs,
         script = sprintf("js/bootstrap%s", jsExt),
-        stylesheet = if (is.null(theme))
-          sprintf("css/bootstrap%s", cssExt)
+        stylesheet = c(
+          "shiny-bootstrap2.css",
+          if (is.null(theme)) sprintf("css/bootstrap%s", cssExt)
+        )
       ),
       if (responsive) {
         htmlDependency("bootstrap-responsive", "2.3.2", bs,
