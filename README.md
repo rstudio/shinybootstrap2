@@ -8,6 +8,9 @@ Versions of Shiny up to and including 0.10.2 generate HTML that uses Bootstrap 2
 
 ## Quick start
 
+shinyBootstrap2 has not yet been released to CRAN, but you can install it using the devtools package.
+
+
 ```R
 # Install Bootstrap 3 branch of Shiny (not yet merged into master)
 devtools::install_github('rstudio/shiny@feature/bootstrap3')
