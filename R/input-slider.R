@@ -175,7 +175,8 @@ slider <- function(inputId, min, max, value, step = NULL, ...,
   }
 
   # build slider
-  dep <- htmlDependency("jslider", "1", c(href="shared/slider"),
+  dep <- htmlDependency("jslider", "1",
+    c(file = system.file("www/jslider", package = "shinyBootstrap2")),
     script = "js/jquery.slider.min.js",
     stylesheet = "css/jquery.slider.min.css"
   )
