@@ -24,11 +24,12 @@ checkboxInput("outliers", "Show outliers", FALSE)
 \seealso{
 \code{\link{checkboxGroupInput}}, \code{\link[shiny]{updateCheckboxInput}}
 
-Other input.elements: \code{\link{checkboxGroupInput}};
+Other input.elements: \code{\link{animationOptions}},
+  \code{\link{sliderInput}};
+  \code{\link{checkboxGroupInput}};
   \code{\link{dateInput}}; \code{\link{dateRangeInput}};
   \code{\link{numericInput}}; \code{\link{radioButtons}};
   \code{\link{selectInput}}, \code{\link{selectizeInput}};
-  \code{\link{sliderInput}}; \code{\link{submitButton}};
-  \code{\link{textInput}}
+  \code{\link{submitButton}}; \code{\link{textInput}}
 }
 

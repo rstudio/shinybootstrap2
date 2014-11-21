@@ -34,11 +34,12 @@ radioButtons("dist", "Distribution type:",
 \seealso{
 \code{\link{updateRadioButtons}}
 
-Other input.elements: \code{\link{checkboxGroupInput}};
+Other input.elements: \code{\link{animationOptions}},
+  \code{\link{sliderInput}};
+  \code{\link{checkboxGroupInput}};
   \code{\link{checkboxInput}}; \code{\link{dateInput}};
   \code{\link{dateRangeInput}}; \code{\link{numericInput}};
   \code{\link{selectInput}}, \code{\link{selectizeInput}};
-  \code{\link{sliderInput}}; \code{\link{submitButton}};
-  \code{\link{textInput}}
+  \code{\link{submitButton}}; \code{\link{textInput}}
 }
 

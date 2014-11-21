@@ -24,11 +24,12 @@ submitButton("Update View")
 submitButton("Update View", icon("refresh"))
 }
 \seealso{
-Other input.elements: \code{\link{checkboxGroupInput}};
+Other input.elements: \code{\link{animationOptions}},
+  \code{\link{sliderInput}};
+  \code{\link{checkboxGroupInput}};
   \code{\link{checkboxInput}}; \code{\link{dateInput}};
   \code{\link{dateRangeInput}}; \code{\link{numericInput}};
   \code{\link{radioButtons}}; \code{\link{selectInput}},
-  \code{\link{selectizeInput}}; \code{\link{sliderInput}};
-  \code{\link{textInput}}
+  \code{\link{selectizeInput}}; \code{\link{textInput}}
 }
 

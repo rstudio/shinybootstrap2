@@ -34,11 +34,11 @@ checkboxGroupInput("variable", "Variable:",
 \seealso{
 \code{\link{checkboxInput}}, \code{\link{updateCheckboxGroupInput}}
 
-Other input.elements: \code{\link{checkboxInput}};
+Other input.elements: \code{\link{animationOptions}},
+  \code{\link{sliderInput}}; \code{\link{checkboxInput}};
   \code{\link{dateInput}}; \code{\link{dateRangeInput}};
   \code{\link{numericInput}}; \code{\link{radioButtons}};
   \code{\link{selectInput}}, \code{\link{selectizeInput}};
-  \code{\link{sliderInput}}; \code{\link{submitButton}};
-  \code{\link{textInput}}
+  \code{\link{submitButton}}; \code{\link{textInput}}
 }
 

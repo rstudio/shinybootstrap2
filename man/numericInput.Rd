@@ -31,11 +31,12 @@ numericInput("obs", "Observations:", 10,
 \seealso{
 \code{\link[shiny]{updateNumericInput}}
 
-Other input.elements: \code{\link{checkboxGroupInput}};
+Other input.elements: \code{\link{animationOptions}},
+  \code{\link{sliderInput}};
+  \code{\link{checkboxGroupInput}};
   \code{\link{checkboxInput}}; \code{\link{dateInput}};
   \code{\link{dateRangeInput}}; \code{\link{radioButtons}};
   \code{\link{selectInput}}, \code{\link{selectizeInput}};
-  \code{\link{sliderInput}}; \code{\link{submitButton}};
-  \code{\link{textInput}}
+  \code{\link{submitButton}}; \code{\link{textInput}}
 }
 
