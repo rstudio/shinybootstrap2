@@ -29,7 +29,7 @@
 #' @param separator String to display between the start and end input boxes.
 #'
 #' @family input elements
-#' @seealso \code{\link{dateInput}}, \code{\link[shiny]{updateDateRangeInput}}
+#' @seealso \code{\link{dateInput}}, \code{\link{updateDateRangeInput}}
 #'
 #' @examples
 #' dateRangeInput("daterange", "Date range:",

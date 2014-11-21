@@ -41,7 +41,7 @@
 #'   "sv", "sw", "th", "tr", "uk", "zh-CN", and "zh-TW".
 #'
 #' @family input elements
-#' @seealso \code{\link{dateRangeInput}}, \code{\link[shiny]{updateDateInput}}
+#' @seealso \code{\link{dateRangeInput}}, \code{\link{updateDateInput}}
 #'
 #' @examples
 #' dateInput("date", "Date:", value = "2012-02-29")

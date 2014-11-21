@@ -1,5 +1,10 @@
 (function() {
 
+  // Escape jQuery selector metacharacters: !"#$%&'()*+,./:;<=>?@[\]^`{|}~
+  var $escape = function(val) {
+    return val.replace(/([!"#$%&'()*+,.\/:;<=>?@\[\\\]^`{|}~])/g, '\\$1');
+  };
+
   var sliderBS2InputBinding = {};
 
   $.extend(sliderBS2InputBinding, Shiny.textInputBinding, {
