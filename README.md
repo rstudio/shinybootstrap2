@@ -12,8 +12,8 @@ shinyBootstrap2 has not yet been released to CRAN, but you can install it using 
 
 
 ```R
-# Install Bootstrap 3 branch of Shiny (not yet merged into master)
-devtools::install_github('rstudio/shiny@feature/bootstrap3')
+# Install development version of Shiny
+devtools::install_github('rstudio/shiny')
 
 devtools::install_github('rstudio/shinyBootstrap2')
 ```
