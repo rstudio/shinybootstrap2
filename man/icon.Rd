@@ -27,6 +27,7 @@ inside of a button, or as an icon for a \code{\link{tabPanel}} within a
 \code{\link{navbarPage}}.
 }
 \examples{
+library(shiny)
 icon("calendar")            # standard icon
 icon("calendar", "fa-3x")   # 3x normal size
 

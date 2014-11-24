@@ -18,6 +18,7 @@
 #'
 #'
 #' @examples
+#' library(shiny)
 #' icon("calendar")            # standard icon
 #' icon("calendar", "fa-3x")   # 3x normal size
 #'
