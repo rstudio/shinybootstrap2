@@ -1,4 +1,14 @@
+.jslider {
+  /* Fix jslider running into the control above it */
+  margin-top: 12px;
+}
+.jslider-value {
+  /* Remove box around jslider values on colored bg */
+  background-color: transparent !important;
+}
+
 span.jslider, .selectize-control {
+  margin-bottom: 12px;
   width: 220px;
   max-width: 95%;
 }
