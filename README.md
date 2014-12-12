@@ -89,10 +89,9 @@ However, the NAMESPACE should _not_ contain `import(shinyBootstrap2)`: this will
 There are a few different ways you can use shinyBootstrap2 in a package:
 
 * Use `shinyBootstrap2::withBootstrap2()`.
-* Each place where you call a function from shinyBootstrap2, use `::`. For example, instead of `fluidPage()`, use `shinyBootstrap2::fluidPage()`.
 * Add `importFrom(shinyBootstrap2,withBootstrap2)` to your NAMESPACE file (if you are using roxygen2, you would add `#' @importFrom shinyBootstrap2 withBootstrap2` to your code), then use `withBootstrap2()` in your code. 
 
-The examples below will use the first method, although the other methods work just as well.
+The examples below will use the first method.
 
 ### Functions that return a shiny app object
 
