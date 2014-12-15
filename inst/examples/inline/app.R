@@ -4,11 +4,15 @@ appExpr <- quote({
       checkboxGroupInput("variable", "Variable:", inline = TRUE,
                          c("Cylinders" = "cyl",
                            "Transmission" = "am",
-                           "Gears" = "gear")),
+                           "Gears" = "gear",
+                           "Horsepower" = "hp",
+                           "Weight" = "wt")),
       radioButtons("radio", "Variable:", inline = TRUE,
                          c("Cylinders" = "cyl",
                            "Transmission" = "am",
-                           "Gears" = "gear"))
+                           "Gears" = "gear",
+                           "Horsepower" = "hp",
+                           "Weight" = "wt"))
     ),
     server = function(input, output) {}
   )
