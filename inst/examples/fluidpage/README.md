@@ -1,13 +1,15 @@
 With `fluidPage()`, each item should be 220 pixels wide and flow with the width of the window. The appearance should be roughly the same with:
 
 ```R
+.GlobalEnv$useBS2 <- FALSE
 runApp(system.file('examples/fluidpage', package = 'shinyBootstrap2'))
 ```
 
 and
 
 ```R
-shinyBootstrap2::withBootstrap2(
-    runApp(system.file('examples/fluidpage', package = 'shinyBootstrap2'))
-)
+.GlobalEnv$useBS2 <- TRUE
+runApp(system.file('examples/fluidpage', package = 'shinyBootstrap2'))
 ```
+
+(The app looks at the `.GlobalEnv$useBS2` variable to see whether it should use the `shinyBootstrap2::withBootstrap2()` wrapper function.)
