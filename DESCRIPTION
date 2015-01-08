@@ -1,6 +1,6 @@
 Package: shinyBootstrap2
 Title: Bootstrap 2 web components for use with Shiny
-Version: 0.1
+Version: 0.2
 Author: RStudio, Inc.
 Maintainer: Winston Chang <winston@rstudio.com>
 Description: Provides Bootstrap 2 web components for use with the Shiny
