@@ -1,4 +1,4 @@
-shinyBootstrap2
+shinybootstrap2
 ===============
 
 This package provides R code and web resources for using [Bootstrap 2](http://getbootstrap.com/2.3.2/) with Shiny.
@@ -8,24 +8,24 @@ Versions of Shiny up to and including 0.10.2.2 generate HTML that uses Bootstrap
 
 ## Quick start
 
-shinyBootstrap2 has not yet been released to CRAN, but you can install it using the devtools package.
+shinybootstrap2 has not yet been released to CRAN, but you can install it using the devtools package.
 
 
 ```R
 # Install development version of Shiny
 devtools::install_github('rstudio/shiny')
 
-devtools::install_github('rstudio/shinyBootstrap2')
+devtools::install_github('rstudio/shinybootstrap2')
 ```
 
-You can also install the [shinyBS2demo](https://github.com/rstudio/shinyBS2demo) package, which demonstrates how to use shinyBootstrap2 within a package:
+You can also install the [shinyBS2demo](https://github.com/rstudio/shinyBS2demo) package, which demonstrates how to use shinybootstrap2 within a package:
 
 ```R
 devtools::install_github('rstudio/shinyBS2demo')
 ```
 
 
-## Using shinyBootstrap2
+## Using shinybootstrap2
 
 There are a number of ways to run a Shiny app: at the console, 
 
@@ -50,10 +50,10 @@ shinyApp(
 ```
 
 
-To use Bootstrap 2, simply wrap your code in `shinyBootstrap2::withBootstrap2({ })`. For example:
+To use Bootstrap 2, simply wrap your code in `shinybootstrap2::withBootstrap2({ })`. For example:
 
 ```R
-shinyBootstrap2::withBootstrap2({
+shinybootstrap2::withBootstrap2({
   shinyApp(
     ui = fluidPage(
       sidebarPanel(selectInput("n", "n", c(1, 5, 10))),
@@ -70,36 +70,36 @@ shinyBootstrap2::withBootstrap2({
 
 You'll notice that the appearance is slightly different. If you inspect the HTML source in your web browser, you'll see that this uses Bootstrap 2, while the previous code uses Bootstrap 3.
 
-Similarly, instead of `shinyApp()`, you can also wrap calls to `runApp()` with `shinyBootstrap2::withBootstrap2()`.
+Similarly, instead of `shinyApp()`, you can also wrap calls to `runApp()` with `shinybootstrap2::withBootstrap2()`.
 
 
 ## In a package
 
-The [shinyBS2demo](https://github.com/rstudio/shinyBS2demo/) package demonstrates how to use shinyBootstrap2 in an R package.
+The [shinyBS2demo](https://github.com/rstudio/shinyBS2demo/) package demonstrates how to use shinybootstrap2 in an R package.
 
-To use shinyBootstrap2 components in a package, the DESCRIPTION file should list it in Imports:
+To use shinybootstrap2 components in a package, the DESCRIPTION file should list it in Imports:
 
 ```
 Imports:
-    shinyBootstrap2
+    shinybootstrap2
 ```
 
-However, the NAMESPACE should _not_ contain `import(shinyBootstrap2)`: this will result in warnings in `R CMD check` if NAMESPACE also contains `import(shiny)`, because many objects from these two packages have the same name. If you are using roxygen2 for documentation, this means you should not have `#' @import shinyBootstrap2` in your code.
+However, the NAMESPACE should _not_ contain `import(shinybootstrap2)`: this will result in warnings in `R CMD check` if NAMESPACE also contains `import(shiny)`, because many objects from these two packages have the same name. If you are using roxygen2 for documentation, this means you should not have `#' @import shinybootstrap2` in your code.
 
-There are a few different ways you can use shinyBootstrap2 in a package:
+There are a few different ways you can use shinybootstrap2 in a package:
 
-* Use `shinyBootstrap2::withBootstrap2()`.
-* Add `importFrom(shinyBootstrap2,withBootstrap2)` to your NAMESPACE file (if you are using roxygen2, you would add `#' @importFrom shinyBootstrap2 withBootstrap2` to your code), then use `withBootstrap2()` in your code. 
+* Use `shinybootstrap2::withBootstrap2()`.
+* Add `importFrom(shinybootstrap2,withBootstrap2)` to your NAMESPACE file (if you are using roxygen2, you would add `#' @importFrom shinybootstrap2 withBootstrap2` to your code), then use `withBootstrap2()` in your code. 
 
 The examples below will use the first method.
 
 ### Functions that return a shiny app object
 
-If your package has functions that return a shiny app object (by calling `shinyApp()`), then you can call `shinyBootstrap2::withBootstrap2()` inside those functions. For example, `bs2appObj` function in the shinyBS2demo package looks like this:
+If your package has functions that return a shiny app object (by calling `shinyApp()`), then you can call `shinybootstrap2::withBootstrap2()` inside those functions. For example, `bs2appObj` function in the shinyBS2demo package looks like this:
 
 ```R
 bs2appObj <- function() {
-  shinyBootstrap2::withBootstrap2({
+  shinybootstrap2::withBootstrap2({
     shinyApp(
       ui = fluidPage(
         sidebarPanel(selectInput("n", "n", c(1, 5, 10))),
@@ -133,11 +133,11 @@ You can view the code for these functions at https://github.com/rstudio/shinyBS2
 
 ### Shiny application files
 
-Most Shiny applications consist of a `server.R` plus `ui.R`, or, for single file apps, `app.R`. To use these with shinyBootstrap2, simply wrap all the code in `shinyBootstrap2::withBootstrap2()`. The applications in shinyBS2demo's [inst/](https://github.com/rstudio/shinyBS2demo/tree/master/inst) directory use this format. To run them, you can do:
+Most Shiny applications consist of a `server.R` plus `ui.R`, or, for single file apps, `app.R`. To use these with shinybootstrap2, simply wrap all the code in `shinybootstrap2::withBootstrap2()`. The applications in shinyBS2demo's [inst/](https://github.com/rstudio/shinyBS2demo/tree/master/inst) directory use this format. To run them, you can do:
 
 
 ```R
-# Uses shinyBootstrap2
+# Uses shinybootstrap2
 runApp(system.file('bs2app', package='shinyBS2demo'))
 
 # Uses Bootstrap 3 components from shiny
@@ -150,7 +150,7 @@ To create an app in inst/ like this, the code in ui.R should be wrapped in `with
 
 ```R
 ## ui.R
-shinyBootstrap2::withBootstrap2({
+shinybootstrap2::withBootstrap2({
   fluidPage(
     selectInput("ui", "Input type", choices = c("numeric", "slider")),
     uiOutput("n_ui"),
@@ -163,7 +163,7 @@ The code in server.R needs `withBootstrap2()` if it contains dynamic UI-generati
 
 ```R
 ## server.R
-shinyBootstrap2::withBootstrap2({
+shinybootstrap2::withBootstrap2({
   function(input, output) {
     output$n_ui <- renderUI({
       if (input$ui == "numeric")
@@ -176,7 +176,7 @@ shinyBootstrap2::withBootstrap2({
 })
 ```
 
-It's safest to simply wrap all server code in `shinyBootstrap2::withBootstrap2()`. If you have `global.R`, or other files that generate UI code, all the UI-generating code must also be wrapped in `shinyBootstrap2::withBootstrap2()`.
+It's safest to simply wrap all server code in `shinybootstrap2::withBootstrap2()`. If you have `global.R`, or other files that generate UI code, all the UI-generating code must also be wrapped in `shinybootstrap2::withBootstrap2()`.
 
 
-For a single-file app, you can simply wrap all the code in `shinyBootstrap2::withBootstrap2()`.
+For a single-file app, you can simply wrap all the code in `shinybootstrap2::withBootstrap2()`.

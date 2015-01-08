@@ -109,7 +109,7 @@ selectizeIt <- function(inputId, select, options, width = NULL, nonempty = FALSE
 
   selectizeDep <- htmlDependency(
     "selectize", "0.8.5",
-    c(file = system.file("www/selectize", package = "shinyBootstrap2")),
+    c(file = system.file("www/selectize", package = "shinybootstrap2")),
     stylesheet = "css/selectize.bootstrap2.css",
     head = format(tagList(
       HTML('<!--[if lt IE 9]>'),

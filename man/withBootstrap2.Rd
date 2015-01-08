@@ -16,21 +16,21 @@ default) \code{x} will be treated as an unquoted expression. If
 }
 \description{
 This function takes an expression containing calls to functions in the
-shinyBootstrap2 package, and evaluates it in an environment where these
-functions will be found, even when shinyBootstrap2 is not attached.
+shinybootstrap2 package, and evaluates it in an environment where these
+functions will be found, even when shinybootstrap2 is not attached.
 }
 \details{
 Versions of shiny after 0.10.2 use Bootstrap 3 instead of Bootstrap 2. The
-purpose of the shinyBootstrap2 package is to provide backward compatibility
-when needed. Almost all of the functions in shinyBootstrap2 have the same
+purpose of the shinybootstrap2 package is to provide backward compatibility
+when needed. Almost all of the functions in shinybootstrap2 have the same
 name as functions in shiny, but they generate HTML that works with Bootstrap
 2 instead of 3.
 
 This function should almost always be called using
-\code{shinyBootstrap2::withBootstrap2()}, without attaching the package. In
-other words, \code{library(shinyBootstrap2)}, shouldn't appear in your code.
+\code{shinybootstrap2::withBootstrap2()}, without attaching the package. In
+other words, \code{library(shinybootstrap2)}, shouldn't appear in your code.
 This is because attaching the package will result in functions from
-shinyBootstrap2 masking functions from shiny, even outside of
+shinybootstrap2 masking functions from shiny, even outside of
 \code{withBootstrap2()}.
 }
 \examples{
@@ -38,7 +38,7 @@ shinyBootstrap2 masking functions from shiny, even outside of
 library(shiny)
 
 ## Single-file app using Bootstrap 2 ===========================
-shinyBootstrap2::withBootstrap2({
+shinybootstrap2::withBootstrap2({
   shinyApp(
     ui = fluidPage(
       numericInput("n", "n", 1),
@@ -53,7 +53,7 @@ shinyBootstrap2::withBootstrap2({
 
 ## App with server.R and UI. R =================================
 ## ui.R
-shinyBootstrap2::withBootstrap2({
+shinybootstrap2::withBootstrap2({
   fluidPage(
     selectInput("ui", "Input type", choices = c("numeric", "slider")),
     uiOutput("n_ui"),
@@ -64,7 +64,7 @@ shinyBootstrap2::withBootstrap2({
 ## server.R
 # In server.R, it's only necessary to wrap code in withBoostrap2()
 # when renderUI() is used.
-shinyBootstrap2::withBootstrap2({
+shinybootstrap2::withBootstrap2({
   function(input, output) {
     output$n_ui <- renderUI({
       if (input$ui == "numeric")

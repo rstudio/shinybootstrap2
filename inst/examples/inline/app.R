@@ -24,7 +24,7 @@ if (is.null(.GlobalEnv$useBS2))
   .GlobalEnv$useBS2 <- FALSE
 
 if (.GlobalEnv$useBS2) {
-  shinyBootstrap2::withBootstrap2(appExpr, quoted = TRUE)
+  shinybootstrap2::withBootstrap2(appExpr, quoted = TRUE)
 } else {
   eval(appExpr)
 }

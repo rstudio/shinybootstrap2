@@ -35,7 +35,7 @@ bootstrapPage <- function(..., title = NULL, responsive = TRUE, theme = NULL) {
     cssExt <- ext(".css")
     jsExt = ext(".js")
     bs <- c(
-      file = system.file("www/bootstrap", package = "shinyBootstrap2")
+      file = system.file("www/bootstrap", package = "shinybootstrap2")
     )
 
     list(

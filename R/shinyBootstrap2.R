@@ -1,7 +1,7 @@
 #' Bootstrap 2 components for use with Shiny
 #'
-#' @name shinyBootstrap2-package
-#' @aliases shinyBootstrap2
+#' @name shinybootstrap2-package
+#' @aliases shinybootstrap2
 #' @docType package
 #' @import htmltools jsonlite
 NULL
@@ -10,20 +10,20 @@ NULL
 #' Run Shiny UI code with Bootstrap 2 elements.
 #'
 #' This function takes an expression containing calls to functions in the
-#' shinyBootstrap2 package, and evaluates it in an environment where these
-#' functions will be found, even when shinyBootstrap2 is not attached.
+#' shinybootstrap2 package, and evaluates it in an environment where these
+#' functions will be found, even when shinybootstrap2 is not attached.
 #'
 #' Versions of shiny after 0.10.2 use Bootstrap 3 instead of Bootstrap 2. The
-#' purpose of the shinyBootstrap2 package is to provide backward compatibility
-#' when needed. Almost all of the functions in shinyBootstrap2 have the same
+#' purpose of the shinybootstrap2 package is to provide backward compatibility
+#' when needed. Almost all of the functions in shinybootstrap2 have the same
 #' name as functions in shiny, but they generate HTML that works with Bootstrap
 #' 2 instead of 3.
 #'
 #' This function should almost always be called using
-#' \code{shinyBootstrap2::withBootstrap2()}, without attaching the package. In
-#' other words, \code{library(shinyBootstrap2)}, shouldn't appear in your code.
+#' \code{shinybootstrap2::withBootstrap2()}, without attaching the package. In
+#' other words, \code{library(shinybootstrap2)}, shouldn't appear in your code.
 #' This is because attaching the package will result in functions from
-#' shinyBootstrap2 masking functions from shiny, even outside of
+#' shinybootstrap2 masking functions from shiny, even outside of
 #' \code{withBootstrap2()}.
 #'
 #' @param x An expression to evaluate with Bootstrap 2 components.
@@ -36,7 +36,7 @@ NULL
 #' library(shiny)
 #'
 #' ## Single-file app using Bootstrap 2 ===========================
-#' shinyBootstrap2::withBootstrap2({
+#' shinybootstrap2::withBootstrap2({
 #'   shinyApp(
 #'     ui = fluidPage(
 #'       numericInput("n", "n", 1),
@@ -51,7 +51,7 @@ NULL
 #'
 #' ## App with server.R and UI. R =================================
 #' ## ui.R
-#' shinyBootstrap2::withBootstrap2({
+#' shinybootstrap2::withBootstrap2({
 #'   fluidPage(
 #'     selectInput("ui", "Input type", choices = c("numeric", "slider")),
 #'     uiOutput("n_ui"),
@@ -62,7 +62,7 @@ NULL
 #' ## server.R
 #' # In server.R, it's only necessary to wrap code in withBoostrap2()
 #' # when renderUI() is used.
-#' shinyBootstrap2::withBootstrap2({
+#' shinybootstrap2::withBootstrap2({
 #'   function(input, output) {
 #'     output$n_ui <- renderUI({
 #'       if (input$ui == "numeric")
@@ -79,7 +79,7 @@ NULL
 withBootstrap2 <- function(x, env = parent.frame(), quoted = FALSE) {
   if (!quoted) x <- substitute(x)
 
-  # Copy everything from the shinyBootstrap2 environment to a new environment
+  # Copy everything from the shinybootstrap2 environment to a new environment
   # which is a child of the calling environment.
   bs2env <- list2env(bs2exports(), parent = env)
 
@@ -90,7 +90,7 @@ withBootstrap2 <- function(x, env = parent.frame(), quoted = FALSE) {
 # Return a list of all exported objects from this package.
 bs2exports <- function() {
   if (is.null(cache$exports)) {
-    cache$exports <- mget(getNamespaceExports("shinyBootstrap2"), asNamespace("shinyBootstrap2"))
+    cache$exports <- mget(getNamespaceExports("shinybootstrap2"), asNamespace("shinybootstrap2"))
   }
 
   cache$exports
@@ -103,7 +103,7 @@ cache <- new.env()
 .onAttach <- function(libname, pkgname) {
   packageStartupMessage(
     "You probably do not want to attach this package (with library() or require()).",
-    " Instead, you should use shinyBootstrap2::withBootstrap2().",
+    " Instead, you should use shinybootstrap2::withBootstrap2().",
     " You can hide this message with suppressPackageStartupMessages()."
   )
 }
