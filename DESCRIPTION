@@ -26,7 +26,7 @@ Description: Provides Bootstrap 2 web components for use with the Shiny
     package for those uses who rely on features specific to Bootstrap 2.
 Depends:
     R (>= 3.0.0)
-License: GPL-3
+License: GPL-3 | file LICENSE
 LazyData: true
 Imports:
     htmltools (>= 0.2.6),
