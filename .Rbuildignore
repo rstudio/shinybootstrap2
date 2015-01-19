@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^.*\.sublime-.*$
 ^man-roxygen$
+^cran-comments.md$
