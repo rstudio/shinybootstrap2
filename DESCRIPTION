@@ -20,7 +20,7 @@ Authors@R: c(
     comment = "DataTables library")
     )
 Description: Provides Bootstrap 2 web components for use with the Shiny
-    package. With Shiny version 0.10.2 and below, these Bootstrap 2 components
+    package. With versions of Shiny prior to 0.11, these Bootstrap 2 components
     were included as part of the package. Later versions of Shiny include
     Bootstrap 3, so the Bootstrap 2 components have been moved into this
     package for those uses who rely on features specific to Bootstrap 2.

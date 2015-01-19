@@ -13,7 +13,7 @@ NULL
 #' shinybootstrap2 package, and evaluates it in an environment where these
 #' functions will be found, even when shinybootstrap2 is not attached.
 #'
-#' Versions of shiny after 0.10.2 use Bootstrap 3 instead of Bootstrap 2. The
+#' Shiny version 0.11 and above uses Bootstrap 3 instead of Bootstrap 2. The
 #' purpose of the shinybootstrap2 package is to provide backward compatibility
 #' when needed. Almost all of the functions in shinybootstrap2 have the same
 #' name as functions in shiny, but they generate HTML that works with Bootstrap
