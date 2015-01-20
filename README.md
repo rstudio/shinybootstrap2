@@ -3,7 +3,7 @@ shinybootstrap2
 
 This package provides R code and web resources for using [Bootstrap 2](http://getbootstrap.com/2.3.2/) with Shiny.
 
-Versions of Shiny up to and including 0.10.2.2 generate HTML that uses Bootstrap 2. After version 0.10.2.2, Shiny switched to [Bootstrap 3](http://getbootstrap.com/), which is not fully compatible with Bootstrap 2. This package enables backward compatibility for Shiny apps that require Bootstrap 2.
+Versions of Shiny up to and including 0.10.2.2 generate HTML that uses Bootstrap 2. With version 0.11, Shiny switched to [Bootstrap 3](http://getbootstrap.com/), which is not fully compatible with Bootstrap 2. This package enables backward compatibility for Shiny apps that require Bootstrap 2.
 
 
 ## Quick start
@@ -12,9 +12,6 @@ shinybootstrap2 has not yet been released to CRAN, but you can install it using 
 
 
 ```R
-# Install development version of Shiny
-devtools::install_github('rstudio/shiny')
-
 devtools::install_github('rstudio/shinybootstrap2')
 ```
 
@@ -31,7 +28,7 @@ There are a number of ways to run a Shiny app: at the console,
 
 ### At the console
 
-If you're using Shiny > 0.10.2.2, this generates a page using Bootstrap 3 when run at the R console:
+If you're using Shiny 0.11 or higher, this generates a page using Bootstrap 3 when run at the R console:
 
 ```R
 library(shiny)
