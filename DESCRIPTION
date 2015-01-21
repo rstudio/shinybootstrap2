@@ -9,7 +9,7 @@ Authors@R: c(
     person("Jacob", "Thornton", role = "ctb",
     comment = "Bootstrap library"),
     person(family = "Bootstrap contributors", role = "ctb",
-    comment = "Bootstrap library; authorst listed at https://github.com/twbs/bootstrap/graphs/contributors"),
+    comment = "Bootstrap library; authors listed at https://github.com/twbs/bootstrap/graphs/contributors"),
     person(family = "Twitter, Inc", role = "cph",
     comment = "Bootstrap library"),
     person("Brian", "Reavis", role = c("ctb", "cph"),
