@@ -18,17 +18,17 @@ Render a \code{\link{renderDataTable}} within an application page.
 interactive table with more features.
 }
 \examples{
-\donttest{
-## Use donttest because running the app will hang automated testing.
-library(shiny)
-shinyApp(
-  ui = bootstrapPage(
-    dataTableOutput('table')
-  ),
-  server = function(input, output) {
-    output$table <- renderDataTable(iris)
-  }
-)
+## Only run this example in interactive R sessions
+if (interactive()) {
+  library(shiny)
+  shinyApp(
+    ui = bootstrapPage(
+      dataTableOutput('table')
+    ),
+    server = function(input, output) {
+      output$table <- renderDataTable(iris)
+    }
+  )
 }
 }
 
