@@ -23,6 +23,7 @@ dataTableDependency <- list(
 #'
 #' @examples
 #' \donttest{
+#' ## Use donttest because running the app will hang automated testing.
 #' library(shiny)
 #' shinyApp(
 #'   ui = bootstrapPage(
