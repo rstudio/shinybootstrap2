@@ -12,7 +12,7 @@ shinybootstrap2 has not yet been released to CRAN, but you can install it using 
 
 
 ```R
-devtools::install_github('rstudio/shinybootstrap2')
+install.packages('shinybootstrap2')
 ```
 
 You can also install the [shinyBS2demo](https://github.com/rstudio/shinyBS2demo) package, which demonstrates how to use shinybootstrap2 within a package:
