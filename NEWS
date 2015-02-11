@@ -1,0 +1,12 @@
+shinybootstrap2 0.2.1
+-------------------------------------------------------------------------------
+
+* Get DataTables HTML dependency at run-time instead of at build-time. This
+  fixes a problem where DataTables wouldn't work if shinybootstrap2 is
+  installed from a binary package from CRAN.
+
+
+shinybootstrap2 0.2
+-------------------------------------------------------------------------------
+
+* First release on CRAN.
