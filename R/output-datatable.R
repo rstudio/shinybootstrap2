@@ -1,16 +1,18 @@
-dataTableDependency <- list(
-  htmlDependency(
-    "datatables", "1.10.2",
-    c(file = system.file("www/datatables", package = "shinybootstrap2")),
-    script = "js/jquery.dataTables.min.js"
-  ),
-  htmlDependency(
-    "datatables-bootstrap", "1.10.2",
-    c(file = system.file("www/datatables", package = "shinybootstrap2")),
-    stylesheet = c("css/dataTables.bootstrap.css", "css/dataTables.extra.css"),
-    script = "js/dataTables.bootstrap.js"
+dataTableDependency <- function() {
+  list(
+    htmlDependency(
+      "datatables", "1.10.2",
+      c(file = system.file("www/datatables", package = "shinybootstrap2")),
+      script = "js/jquery.dataTables.min.js"
+    ),
+    htmlDependency(
+      "datatables-bootstrap", "1.10.2",
+      c(file = system.file("www/datatables", package = "shinybootstrap2")),
+      stylesheet = c("css/dataTables.bootstrap.css", "css/dataTables.extra.css"),
+      script = "js/dataTables.bootstrap.js"
+    )
   )
-)
+}
 
 #' Create a table output element
 #'
@@ -38,6 +40,6 @@ dataTableDependency <- list(
 dataTableOutput <- function(outputId) {
   attachDependencies(
     div(id = outputId, class="shiny-datatable-output"),
-    dataTableDependency
+    dataTableDependency()
   )
 }
